@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+header h1 {
+    font-size: 60px;
+}
+.animation {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #434343 0%, black 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hujo-logo {
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hujo-logo-hor {
+    height: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    text-align: right;
+    opacity: 0;
+}
+
+.button-64 {
+    margin: 20px 0px;
+    align-items: center;
+    background-image: linear-gradient(
+        -144deg,
+        #490707 30%,
+        #6a0a0a 50%,
+        #834242
+    );
+    border: 0;
+    border-radius: 10px;
+    box-shadow: #000000 0 0px 20px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 2px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+    outline: 0;
+    font-size: 30px;
+}
+
+.button-64 span {
+    background-color: rgb(42, 42, 42);
+    padding: 16px 24px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-64:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .button-64 {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
