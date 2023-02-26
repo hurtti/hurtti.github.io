@@ -24,8 +24,9 @@ imid.style.top = window.innerHeight / 2 - imid.height / 2 + "px";
 ihor.style.left = 0 + "px";
 ihor.style.top = window.innerHeight / 2 - ihor.height / 2 + "px";
 
-b.style.left = window.innerWidth / 2 - ihor.width / 2 + "px";
-b.style.top = window.innerHeight / 2 - ihor.height * 0.25 + "px";
+b.style.left =
+    window.innerWidth / 2 - b.clientWidth / 2 - ihor.width / 2 + "px";
+b.style.top = window.innerHeight / 2 - b.clientHeight / 2 + "px";
 
 const movePathTL = {
     curviness: 1,

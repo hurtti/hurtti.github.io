@@ -45,7 +45,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     max-width: 400px;
-    text-align: right;
+    text-align: center;
     opacity: 0;
 }
 
